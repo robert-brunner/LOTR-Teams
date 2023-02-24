@@ -3,44 +3,32 @@
 // for ENTIRE API
 export const getApiInfo = () => {
     const apiUrl = `https://the-one-api.dev/v2/character`;
-  
+
     return fetch(apiUrl, {
-      method: "GET",
-      headers: { Authorization: "Bearer wi7TL1OO-6Qi2UGU7mAF" },
+        method: "GET",
+        headers: { Authorization: "Bearer wi7TL1OO-6Qi2UGU7mAF" },
     })
-      .then((res) => {
-        return res.json();
-      })
-      .then((json) => {
-        return json;
-      })
-      .then((json) => {
-        console.log(json);
-        return json;
-      })
-      
-  };
-  
+        .then((res) => {
+            return res.json();
+        })
+        .catch((err) => console.error(err))
+
+};
+
 //for for character by id
-  export const getCharacterInfo = (id) => {
+export const getCharacterInfo = (id) => {
     const apiUrl = `https://the-one-api.dev/v2/character/${id}`;
-  
+
     return fetch(apiUrl, {
-      method: "GET",
-      headers: { Authorization: "Bearer wi7TL1OO-6Qi2UGU7mAF" },
+        method: "GET",
+        headers: { Authorization: "Bearer wi7TL1OO-6Qi2UGU7mAF" },
     })
-      .then((res) => {
-        return res.json();
-      })
-      .then((json) => {
-        return json;
-      })
-      .then((json) => {
-        console.log(json);
-        return json;
-      })
-      
-  };
+        .then((res) => {
+            return res.json();
+        })
+        .catch((err) => console.error(err))
+
+};
 
 /*
 {
